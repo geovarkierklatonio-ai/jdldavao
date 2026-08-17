@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { MapPin, Calendar, Briefcase, ExternalLink } from 'lucide-react';
+import { getImageUrl } from '../utils/imageUtils';
 
 export const AccomplishedProjects: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
@@ -155,7 +156,7 @@ export const AccomplishedProjects: React.FC = () => {
                   aria-label={project.title}
                   className="w-full h-full bg-cover bg-no-repeat"
                   style={{
-                    backgroundImage: "url('/images/security-projects-grid.png')",
+                    backgroundImage: `url('${getImageUrl('/images/security-projects-grid.png')}')`,
                     backgroundPosition: project.imagePosition,
                     backgroundSize: '300% 200%',
                   }}

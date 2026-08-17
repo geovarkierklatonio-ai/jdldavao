@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Calendar, User, ArrowRight, Search } from 'lucide-react';
+import { getImageUrl } from '../utils/imageUtils';
 
 export const Blog: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -174,7 +175,7 @@ export const Blog: React.FC = () => {
                     aria-label={post.title}
                     className="w-full h-full bg-cover bg-no-repeat"
                     style={{
-                      backgroundImage: "url('/images/security-insights-grid.png')",
+                      backgroundImage: `url('${getImageUrl('/images/security-insights-grid.png')}')`,
                       backgroundPosition: post.imagePosition,
                       backgroundSize: '300% 200%',
                     }}

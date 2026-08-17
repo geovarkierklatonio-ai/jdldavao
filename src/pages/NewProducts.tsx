@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { ShoppingCart, Star, Check } from 'lucide-react';
+import { getImageUrl } from '../utils/imageUtils';
 
 export const NewProducts: React.FC = () => {
   const [filter, setFilter] = useState('all');
@@ -162,7 +163,7 @@ export const NewProducts: React.FC = () => {
                   aria-label={product.name}
                   className="w-full h-full bg-cover bg-no-repeat"
                   style={{
-                    backgroundImage: "url('/images/security-products-grid.png')",
+                    backgroundImage: `url('${getImageUrl('/images/security-products-grid.png')}')`,
                     backgroundPosition: product.imagePosition,
                     backgroundSize: '300% 200%',
                   }}

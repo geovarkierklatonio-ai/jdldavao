@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Award, Users, Target, Heart } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { getImageUrl } from '../utils/imageUtils';
 
 export const AboutUs: React.FC = () => {
   const teamMembers = [
@@ -252,7 +253,7 @@ export const AboutUs: React.FC = () => {
                     aria-label={member.name}
                     className="w-full h-full bg-cover bg-no-repeat"
                     style={{
-                      backgroundImage: "url('/images/team-portraits-grid.png')",
+                      backgroundImage: `url('${getImageUrl('/images/team-portraits-grid.png')}')`,
                       backgroundPosition: member.imagePosition,
                       backgroundSize: '200% 200%',
                     }}
