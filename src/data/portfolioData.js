@@ -41,6 +41,63 @@ export const skills = [
   { name: 'AI Tools', level: 'Advanced', color: 'from-pink-500 to-red-500' },
 ]
 
+export const skillsByCategory = [
+  {
+    category: 'FRONT END',
+    skills: [
+      { name: 'HTML', icon: 'SiHtml5', color: 'text-orange-500', bgColor: 'bg-orange-500/10', borderColor: 'border-orange-500/30' },
+      { name: 'CSS', icon: 'SiCss3', color: 'text-blue-500', bgColor: 'bg-blue-500/10', borderColor: 'border-blue-500/30' },
+      { name: 'JAVASCRIPT', icon: 'SiJavascript', color: 'text-yellow-400', bgColor: 'bg-yellow-500/10', borderColor: 'border-yellow-400/30' },
+      { name: 'BOOTSTRAP', icon: 'SiBootstrap', color: 'text-purple-600', bgColor: 'bg-purple-500/10', borderColor: 'border-purple-600/30' },
+      { name: 'REACT (VITE)', icon: 'SiReact', color: 'text-cyan-400', bgColor: 'bg-cyan-500/10', borderColor: 'border-cyan-400/30' },
+    ],
+  },
+  {
+    category: 'FULL STACK',
+    skills: [
+      { name: 'NEXT.JS', icon: 'SiNextdotjs', color: 'text-slate-900', bgColor: 'bg-slate-500/10', borderColor: 'border-slate-400/30' },
+      { name: 'LARAVEL', icon: 'SiLaravel', color: 'text-red-500', bgColor: 'bg-red-500/10', borderColor: 'border-red-500/30' },
+      { name: 'FLUTTERFLOW', icon: 'SiFlutter', color: 'text-blue-500', bgColor: 'bg-blue-500/10', borderColor: 'border-blue-500/30' },
+    ],
+  },
+  {
+    category: 'BACK END',
+    skills: [
+      { name: 'PHP', icon: 'SiPhp', color: 'text-indigo-600', bgColor: 'bg-indigo-500/10', borderColor: 'border-indigo-600/30' },
+      { name: 'SUPABASE', icon: 'SiSupabase', color: 'text-emerald-500', bgColor: 'bg-emerald-500/10', borderColor: 'border-emerald-500/30' },
+      { name: 'MYSQL', icon: 'SiMysql', color: 'text-orange-600', bgColor: 'bg-orange-500/10', borderColor: 'border-orange-600/30' },
+      { name: 'POSTGRESQL', icon: 'SiPostgresql', color: 'text-blue-600', bgColor: 'bg-blue-500/10', borderColor: 'border-blue-600/30' },
+    ],
+  },
+  {
+    category: 'LANGUAGE',
+    skills: [
+      { name: 'DART', icon: 'SiDart', color: 'text-cyan-500', bgColor: 'bg-cyan-500/10', borderColor: 'border-cyan-500/30' },
+      { name: 'JAVA', icon: 'SiJava', color: 'text-orange-600', bgColor: 'bg-orange-500/10', borderColor: 'border-orange-600/30' },
+      { name: 'C#', icon: 'SiCsharp', color: 'text-green-600', bgColor: 'bg-green-500/10', borderColor: 'border-green-600/30' },
+    ],
+  },
+  {
+    category: 'TOOLS',
+    skills: [
+      { name: 'GIT', icon: 'SiGit', color: 'text-orange-600', bgColor: 'bg-orange-500/10', borderColor: 'border-orange-600/30' },
+      { name: 'GITHUB', icon: 'SiGithub', color: 'text-slate-700', bgColor: 'bg-slate-500/10', borderColor: 'border-slate-700/30' },
+      { name: 'VSCODE', icon: 'SiVisualstudiocode', color: 'text-blue-600', bgColor: 'bg-blue-500/10', borderColor: 'border-blue-600/30' },
+      { name: 'GEMINI', icon: 'SiGoogle', color: 'text-red-500', bgColor: 'bg-red-500/10', borderColor: 'border-red-500/30' },
+      { name: 'GPT', icon: 'SiOpenai', color: 'text-emerald-600', bgColor: 'bg-emerald-500/10', borderColor: 'border-emerald-600/30' },
+      { name: 'CLAUDE', icon: 'SiAnthropic', color: 'text-purple-600', bgColor: 'bg-purple-500/10', borderColor: 'border-purple-600/30' },
+    ],
+  },
+  {
+    category: 'OTHER SKILLS',
+    skills: [
+      { name: 'PROJECT MAINTENANCE', icon: 'SiGitpod', color: 'text-cyan-500', bgColor: 'bg-cyan-500/10', borderColor: 'border-cyan-500/30' },
+      { name: 'FILE MANAGEMENT', icon: 'SiFiles', color: 'text-amber-500', bgColor: 'bg-amber-500/10', borderColor: 'border-amber-500/30' },
+      { name: 'MS OFFICE', icon: 'SiMicrosoft', color: 'text-blue-600', bgColor: 'bg-blue-500/10', borderColor: 'border-blue-600/30' },
+    ],
+  },
+]
+
 export const projects = [
   {
     title: 'Portfolio Dashboard',

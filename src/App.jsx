@@ -16,6 +16,7 @@ import {
 } from 'lucide-react'
 import SectionTitle from './components/SectionTitle'
 import SkillCard from './components/SkillCard'
+import SkillsCategory from './components/SkillsCategory'
 import ProjectCard from './components/ProjectCard'
 import TimelineItem from './components/TimelineItem'
 import TypeWriter from './components/TypeWriter'
@@ -29,6 +30,7 @@ import {
   navItems,
   projects,
   skills,
+  skillsByCategory,
   stats,
 } from './data/portfolioData'
 
@@ -553,15 +555,11 @@ function App() {
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                   <SectionTitle
                     eyebrow="Skills"
-                    title="Core stack for modern product development"
-                    description="I work with the tools that help me design, build, ship, and improve software efficiently in today’s AI-augmented development environment."
+                    title="Core tech stack by category"
+                    description="I work with modern technologies across frontend, backend, languages, and tools to deliver scalable products."
                   />
 
-                  <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-                    {skills.map((skill) => (
-                      <SkillCard key={skill.name} {...skill} />
-                    ))}
-                  </div>
+                  <SkillsCategory skillsByCategory={skillsByCategory} />
                 </div>
               </motion.section>
 
