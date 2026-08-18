@@ -80,14 +80,14 @@ export const AboutUs: React.FC = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-teal-600 text-white py-16">
+      <section className="bg-gradient-to-r from-red-600 to-red-700 text-white py-16">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           className="max-w-7xl mx-auto px-4 text-center"
         >
           <h1 className="text-5xl font-bold mb-4">About JDL Davao</h1>
-          <p className="text-xl text-blue-100">
+          <p className="text-xl text-gray-200">
             Your trusted security partner since 2009
           </p>
         </motion.div>
@@ -154,7 +154,7 @@ export const AboutUs: React.FC = () => {
                   className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow"
                 >
                   <div className="bg-gradient-to-r from-blue-100 to-teal-100 w-16 h-16 rounded-lg flex items-center justify-center mb-4">
-                    <Icon className="w-8 h-8 text-blue-600" />
+                    <Icon className="w-8 h-8 text-red-600" />
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-3">
                     {value.title}
@@ -202,7 +202,7 @@ export const AboutUs: React.FC = () => {
               </div>
 
               <div className="flex flex-col items-center">
-                <div className="w-4 h-4 bg-gradient-to-r from-blue-600 to-teal-600 rounded-full" />
+                <div className="w-4 h-4 bg-gradient-to-r from-red-600 to-red-700 rounded-full" />
                 <div className="w-1 h-12 bg-gray-300 my-2" />
               </div>
 
@@ -265,7 +265,7 @@ export const AboutUs: React.FC = () => {
                   <h3 className="text-xl font-bold text-gray-900 mb-1">
                     {member.name}
                   </h3>
-                  <p className="text-blue-600 font-semibold mb-2">
+                  <p className="text-red-600 font-semibold mb-2">
                     {member.role}
                   </p>
                   <p className="text-gray-600 text-sm">{member.bio}</p>
@@ -277,7 +277,7 @@ export const AboutUs: React.FC = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-teal-600 text-white">
+      <section className="py-20 bg-gradient-to-r from-red-600 to-red-700 text-white">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -287,12 +287,12 @@ export const AboutUs: React.FC = () => {
           <h2 className="text-5xl font-bold mb-6">
             Let's Secure Your Future Together
           </h2>
-          <p className="text-xl text-blue-100 mb-8">
+          <p className="text-xl text-gray-200 mb-8">
             Contact us today to learn how JDL Davao can help protect what matters most to you
           </p>
           <Link
             to="/contact"
-            className="bg-white text-blue-600 px-8 py-4 rounded-lg font-bold text-lg hover:shadow-2xl hover:scale-105 transition-all inline-block"
+            className="bg-white text-red-600 px-8 py-4 rounded-lg font-bold text-lg hover:shadow-2xl hover:scale-105 transition-all inline-block"
           >
             Get in Touch
           </Link>

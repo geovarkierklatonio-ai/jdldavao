@@ -7,9 +7,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#1e40af",
-        secondary: "#0f766e",
-        accent: "#f97316",
+        primary: "#dc2626",
+        secondary: "#ffffff",
+        accent: "#991b1b",
       },
       animation: {
         fadeIn: "fadeIn 0.5s ease-in-out",

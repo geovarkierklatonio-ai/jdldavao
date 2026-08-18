@@ -26,7 +26,7 @@ export const Navbar: React.FC = () => {
             className="flex items-center"
           >
             <Link to="/" className="flex items-center gap-2 group">
-              <div className="bg-gradient-to-r from-blue-600 to-teal-600 p-2 rounded-lg group-hover:shadow-lg transition-shadow">
+              <div className="bg-gradient-to-r from-red-600 to-red-700 p-2 rounded-lg group-hover:shadow-lg transition-shadow">
                 <Shield className="w-6 h-6 text-white" />
               </div>
               <div>
@@ -50,8 +50,8 @@ export const Navbar: React.FC = () => {
                   className={({ isActive }) =>
                     `relative px-3 py-2 text-sm font-bold text-gray-700 rounded-md transition-all duration-200 after:absolute after:bottom-0 after:left-3 after:right-3 after:h-0.5 after:rounded-full after:bg-red-600 after:transition-transform ${
                       isActive
-                        ? 'text-blue-600 bg-blue-50 after:scale-x-100'
-                        : 'hover:text-blue-600 hover:bg-blue-50 after:scale-x-0 hover:after:scale-x-100'
+                        ? 'text-red-600 bg-red-50 after:scale-x-100'
+                        : 'hover:text-red-600 hover:bg-red-50 after:scale-x-0 hover:after:scale-x-100'
                     }`
                   }
                 >
@@ -65,7 +65,7 @@ export const Navbar: React.FC = () => {
           <div className="hidden md:flex items-center gap-4">
             <a
               href="tel:+639166294234"
-              className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-600 to-teal-600 text-white rounded-lg hover:shadow-lg transition-all duration-200 font-medium"
+              className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-red-600 to-red-700 text-white rounded-lg hover:shadow-lg transition-all duration-200 font-medium"
             >
               <Phone className="w-4 h-4" />
               <span>Call Us</span>
@@ -78,7 +78,7 @@ export const Navbar: React.FC = () => {
               onClick={() => setIsOpen(!isOpen)}
               aria-label={isOpen ? 'Close navigation menu' : 'Open navigation menu'}
               aria-expanded={isOpen}
-              className="p-2 rounded-md text-gray-700 hover:bg-blue-50 transition-colors"
+              className="p-2 rounded-md text-gray-700 hover:bg-red-50 transition-colors"
             >
               {isOpen ? (
                 <X className="w-6 h-6" />
@@ -103,7 +103,7 @@ export const Navbar: React.FC = () => {
                   to={link.path}
                   className={({ isActive }) =>
                     `block px-3 py-2 text-sm font-bold rounded-md transition-colors ${
-                      isActive ? 'bg-blue-100 text-blue-600' : 'text-gray-700 hover:bg-blue-100'
+                      isActive ? 'bg-blue-100 text-red-600' : 'text-gray-700 hover:bg-blue-100'
                     }`
                   }
                   onClick={() => setIsOpen(false)}
@@ -113,7 +113,7 @@ export const Navbar: React.FC = () => {
               ))}
               <a
                 href="tel:+639166294234"
-                className="block px-3 py-2 text-sm font-medium text-white bg-gradient-to-r from-blue-600 to-teal-600 rounded-md"
+                className="block px-3 py-2 text-sm font-medium text-white bg-gradient-to-r from-red-600 to-red-700 rounded-md"
               >
                 📞 Call: 082-2243926
               </a>
