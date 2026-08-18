@@ -79,7 +79,7 @@ export const ContactUs: React.FC = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-teal-600 text-white py-16">
+      <section className="bg-gradient-to-r from-red-600 to-red-700 text-white py-16">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -113,7 +113,7 @@ export const ContactUs: React.FC = () => {
                   className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all text-center"
                 >
                   <div className="bg-gradient-to-r from-blue-100 to-teal-100 w-16 h-16 rounded-lg flex items-center justify-center mx-auto mb-4">
-                    <Icon className="w-8 h-8 text-blue-600" />
+                    <Icon className="w-8 h-8 text-red-600" />
                   </div>
                   <h3 className="text-lg font-bold text-gray-900 mb-2">
                     {info.label}
@@ -160,7 +160,7 @@ export const ContactUs: React.FC = () => {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-blue-600 focus:outline-none transition-colors"
+                    className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-red-600 focus:outline-none transition-colors"
                     placeholder="John Doe"
                   />
                 </div>
@@ -175,7 +175,7 @@ export const ContactUs: React.FC = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-blue-600 focus:outline-none transition-colors"
+                    className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-red-600 focus:outline-none transition-colors"
                     placeholder="john@example.com"
                   />
                 </div>
@@ -192,7 +192,7 @@ export const ContactUs: React.FC = () => {
                     value={formData.phone}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-blue-600 focus:outline-none transition-colors"
+                    className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-red-600 focus:outline-none transition-colors"
                     placeholder="+63 912 345 6789"
                   />
                 </div>
@@ -206,7 +206,7 @@ export const ContactUs: React.FC = () => {
                     value={formData.subject}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-blue-600 focus:outline-none transition-colors"
+                    className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-red-600 focus:outline-none transition-colors"
                   >
                     <option value="">Select a subject</option>
                     <option value="cctv">CCTV Systems</option>
@@ -229,7 +229,7 @@ export const ContactUs: React.FC = () => {
                   onChange={handleChange}
                   required
                   rows={6}
-                  className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-blue-600 focus:outline-none transition-colors resize-none"
+                  className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-red-600 focus:outline-none transition-colors resize-none"
                   placeholder="Tell us about your security needs..."
                 />
               </div>
@@ -238,7 +238,7 @@ export const ContactUs: React.FC = () => {
                 type="submit"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                className="w-full bg-gradient-to-r from-blue-600 to-teal-600 text-white py-4 rounded-lg font-bold text-lg hover:shadow-lg transition-all flex items-center justify-center gap-2"
+                className="w-full bg-gradient-to-r from-red-600 to-red-700 text-white py-4 rounded-lg font-bold text-lg hover:shadow-lg transition-all flex items-center justify-center gap-2"
               >
                 <Send className="w-5 h-5" />
                 Send Message
@@ -254,7 +254,7 @@ export const ContactUs: React.FC = () => {
             className="space-y-8"
           >
             {/* Map Placeholder */}
-            <div className="bg-gradient-to-br from-blue-100 to-teal-100 rounded-xl h-80 flex items-center justify-center border-2 border-blue-300 overflow-hidden">
+            <div className="bg-gradient-to-br from-red-100 to-red-50 rounded-xl h-80 flex items-center justify-center border-2 border-red-300 overflow-hidden">
               <iframe
                 width="100%"
                 height="100%"
@@ -267,27 +267,27 @@ export const ContactUs: React.FC = () => {
             </div>
 
             {/* Additional Information */}
-            <div className="bg-gradient-to-br from-blue-50 to-teal-50 p-8 rounded-xl border border-blue-200">
+            <div className="bg-gradient-to-br from-red-50 to-white p-8 rounded-xl border border-red-200">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Why Choose JDL?</h3>
               <ul className="space-y-3 text-gray-700">
                 <li className="flex gap-3">
-                  <span className="text-blue-600 font-bold">✓</span>
+                  <span className="text-red-600 font-bold">✓</span>
                   <span>Professional and certified security experts</span>
                 </li>
                 <li className="flex gap-3">
-                  <span className="text-blue-600 font-bold">✓</span>
+                  <span className="text-red-600 font-bold">✓</span>
                   <span>24/7 customer support and emergency response</span>
                 </li>
                 <li className="flex gap-3">
-                  <span className="text-blue-600 font-bold">✓</span>
+                  <span className="text-red-600 font-bold">✓</span>
                   <span>State-of-the-art security technology</span>
                 </li>
                 <li className="flex gap-3">
-                  <span className="text-blue-600 font-bold">✓</span>
+                  <span className="text-red-600 font-bold">✓</span>
                   <span>Competitive pricing and flexible payment options</span>
                 </li>
                 <li className="flex gap-3">
-                  <span className="text-blue-600 font-bold">✓</span>
+                  <span className="text-red-600 font-bold">✓</span>
                   <span>Warranty on all installations and products</span>
                 </li>
               </ul>

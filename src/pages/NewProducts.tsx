@@ -106,14 +106,14 @@ export const NewProducts: React.FC = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-teal-600 text-white py-12">
+      <section className="bg-gradient-to-r from-red-600 to-red-700 text-white py-12">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           className="max-w-7xl mx-auto px-4 text-center"
         >
           <h1 className="text-5xl font-bold mb-4">New Products</h1>
-          <p className="text-xl text-blue-100">
+          <p className="text-xl text-gray-200">
             Discover our latest security solutions and innovative products
           </p>
         </motion.div>
@@ -133,8 +133,8 @@ export const NewProducts: React.FC = () => {
               onClick={() => setFilter(cat.id)}
               className={`px-6 py-2 rounded-full font-medium transition-all duration-300 ${
                 filter === cat.id
-                  ? 'bg-gradient-to-r from-blue-600 to-teal-600 text-white shadow-lg'
-                  : 'bg-white text-gray-700 border-2 border-gray-300 hover:border-blue-600'
+                  ? 'bg-gradient-to-r from-red-600 to-red-700 text-white shadow-lg'
+                  : 'bg-white text-gray-700 border-2 border-gray-300 hover:border-red-600'
               }`}
             >
               {cat.label}
@@ -214,7 +214,7 @@ export const NewProducts: React.FC = () => {
                 <div className="space-y-2 mb-4">
                   {product.features.map((feature, idx) => (
                     <div key={idx} className="flex items-center gap-2 text-sm text-gray-600">
-                      <Check className="w-4 h-4 text-teal-600" />
+                      <Check className="w-4 h-4 text-red-700" />
                       {feature}
                     </div>
                   ))}
@@ -222,7 +222,7 @@ export const NewProducts: React.FC = () => {
 
                 {/* Price and CTA */}
                 <div className="flex items-center justify-between">
-                  <span className="text-3xl font-bold text-blue-600">
+                  <span className="text-3xl font-bold text-red-600">
                     {product.price}
                   </span>
                   <motion.button
@@ -230,7 +230,7 @@ export const NewProducts: React.FC = () => {
                     aria-label={`Add ${product.name} to cart`}
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    className="bg-gradient-to-r from-blue-600 to-teal-600 text-white p-3 rounded-lg hover:shadow-lg transition-all"
+                    className="bg-gradient-to-r from-red-600 to-red-700 text-white p-3 rounded-lg hover:shadow-lg transition-all"
                   >
                     <ShoppingCart className="w-6 h-6" />
                   </motion.button>

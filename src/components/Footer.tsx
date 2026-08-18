@@ -29,20 +29,20 @@ export const Footer: React.FC = () => {
       >
         {/* Company Info */}
         <motion.div variants={itemVariants}>
-          <h3 className="text-xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-teal-400">
+          <h3 className="text-xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-600">
             JDL DAVAO
           </h3>
           <p className="text-gray-400 mb-4">
             Your trusted partner in security systems technology since 2009. Serving Davao with professional CCTV, fire alarms, and integrated solutions.
           </p>
           <div className="flex gap-4">
-            <a href="#" className="text-sm hover:text-blue-400 transition-colors font-medium">
-              Facebook
+            <a href="#" className="text-sm hover:text-red-400 transition-colors font-medium">
+            Facebook
             </a>
-            <a href="#" className="text-sm hover:text-blue-400 transition-colors font-medium">
-              LinkedIn
+            <a href="#" className="text-sm hover:text-red-400 transition-colors font-medium">
+            LinkedIn
             </a>
-            <a href="#" className="text-sm hover:text-blue-400 transition-colors font-medium">
+            <a href="#" className="text-sm hover:text-red-400 transition-colors font-medium">
               Twitter
             </a>
           </div>
@@ -131,7 +131,7 @@ export const Footer: React.FC = () => {
               </a>
             </div>
             <div className="flex gap-3 items-center">
-              <Mail className="w-5 h-5 text-blue-400" />
+              <Mail className="w-5 h-5 text-red-400" />
               <a href="mailto:jdldavao@yahoo.com" className="hover:text-white transition-colors">
                 jdldavao@yahoo.com
               </a>

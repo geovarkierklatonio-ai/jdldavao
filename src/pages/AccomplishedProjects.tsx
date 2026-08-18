@@ -98,7 +98,7 @@ export const AccomplishedProjects: React.FC = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-teal-600 text-white py-12">
+      <section className="bg-gradient-to-r from-red-600 to-red-700 text-white py-12">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -124,8 +124,8 @@ export const AccomplishedProjects: React.FC = () => {
               onClick={() => setSelectedCategory(cat.id)}
               className={`px-6 py-2 rounded-full font-medium transition-all duration-300 ${
                 selectedCategory === cat.id
-                  ? 'bg-gradient-to-r from-blue-600 to-teal-600 text-white shadow-lg'
-                  : 'bg-white text-gray-700 border-2 border-gray-300 hover:border-blue-600'
+                  ? 'bg-gradient-to-r from-red-600 to-red-700 text-white shadow-lg'
+                  : 'bg-white text-gray-700 border-2 border-gray-300 hover:border-red-600'
               }`}
             >
               {cat.label}
@@ -175,15 +175,15 @@ export const AccomplishedProjects: React.FC = () => {
                 {/* Meta Information */}
                 <div className="space-y-2 mb-4">
                   <div className="flex items-center gap-2 text-gray-600">
-                    <MapPin className="w-5 h-5 text-blue-600" />
+                    <MapPin className="w-5 h-5 text-red-600" />
                     <span>{project.location}</span>
                   </div>
                   <div className="flex items-center gap-2 text-gray-600">
-                    <Calendar className="w-5 h-5 text-blue-600" />
+                    <Calendar className="w-5 h-5 text-red-600" />
                     <span>{project.date}</span>
                   </div>
                   <div className="flex items-center gap-2 text-gray-600">
-                    <Briefcase className="w-5 h-5 text-blue-600" />
+                    <Briefcase className="w-5 h-5 text-red-600" />
                     <span>{project.category.replace('-', ' ')}</span>
                   </div>
                 </div>
@@ -196,7 +196,7 @@ export const AccomplishedProjects: React.FC = () => {
                   {project.technologies.map((tech, idx) => (
                     <span
                       key={idx}
-                      className="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-medium"
+                      className="bg-red-100 text-red-700 px-3 py-1 rounded-full text-sm font-medium"
                     >
                       {tech}
                     </span>
@@ -208,7 +208,7 @@ export const AccomplishedProjects: React.FC = () => {
                   type="button"
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
-                  className="w-full bg-gradient-to-r from-blue-600 to-teal-600 text-white py-3 rounded-lg font-semibold hover:shadow-lg transition-all flex items-center justify-center gap-2"
+                  className="w-full bg-gradient-to-r from-red-600 to-red-700 text-white py-3 rounded-lg font-semibold hover:shadow-lg transition-all flex items-center justify-center gap-2"
                 >
                   Learn More <ExternalLink className="w-4 h-4" />
                 </motion.button>

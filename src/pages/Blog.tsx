@@ -97,14 +97,14 @@ export const Blog: React.FC = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-teal-600 text-white py-12">
+      <section className="bg-gradient-to-r from-red-600 to-red-700 text-white py-12">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           className="max-w-7xl mx-auto px-4 text-center"
         >
           <h1 className="text-5xl font-bold mb-4">Security Blog</h1>
-          <p className="text-xl text-blue-100">
+          <p className="text-xl text-gray-200">
             Latest insights, tips, and case studies on security solutions
           </p>
         </motion.div>
@@ -125,7 +125,7 @@ export const Blog: React.FC = () => {
               placeholder="Search blog posts..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              className="w-full pl-12 pr-4 py-3 rounded-lg border-2 border-gray-300 focus:border-blue-600 focus:outline-none transition-colors"
+              className="w-full pl-12 pr-4 py-3 rounded-lg border-2 border-gray-300 focus:border-red-600 focus:outline-none transition-colors"
             />
           </div>
         </motion.div>
@@ -142,8 +142,8 @@ export const Blog: React.FC = () => {
               onClick={() => setSelectedCategory(cat)}
               className={`px-6 py-2 rounded-full font-medium transition-all duration-300 ${
                 selectedCategory === cat
-                  ? 'bg-gradient-to-r from-blue-600 to-teal-600 text-white shadow-lg'
-                  : 'bg-white text-gray-700 border-2 border-gray-300 hover:border-blue-600'
+                  ? 'bg-gradient-to-r from-red-600 to-red-700 text-white shadow-lg'
+                  : 'bg-white text-gray-700 border-2 border-gray-300 hover:border-red-600'
               }`}
             >
               {cat === 'all' ? 'All Posts' : cat}
@@ -182,7 +182,7 @@ export const Blog: React.FC = () => {
                     whileHover={{ scale: 1.1 }}
                     transition={{ duration: 0.3 }}
                   />
-                  <div className="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                  <div className="absolute top-4 right-4 bg-red-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
                     {post.category}
                   </div>
                 </div>
@@ -208,7 +208,7 @@ export const Blog: React.FC = () => {
                         <User className="w-4 h-4" />
                         {post.author}
                       </div>
-                      <div className="text-blue-600 font-medium">{post.readTime}</div>
+                      <div className="text-red-600 font-medium">{post.readTime}</div>
                     </div>
                   </div>
 
@@ -217,7 +217,7 @@ export const Blog: React.FC = () => {
                     type="button"
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
-                    className="mt-4 w-full bg-gradient-to-r from-blue-600 to-teal-600 text-white py-3 rounded-lg font-semibold hover:shadow-lg transition-all flex items-center justify-center gap-2"
+                    className="mt-4 w-full bg-gradient-to-r from-red-600 to-red-700 text-white py-3 rounded-lg font-semibold hover:shadow-lg transition-all flex items-center justify-center gap-2"
                   >
                     Read Full Article <ArrowRight className="w-4 h-4" />
                   </motion.button>
